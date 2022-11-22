@@ -1,0 +1,91 @@
+#header {
+  height: 100px;
+  width: cover;
+  background: #45066f;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+}
+#select-lang {
+  background-color: #48afef;
+  margin-left: 830px;
+}
+body {
+  margin: 0;
+  position: relative;
+  background: black;
+}
+.titulosHeader {
+  font-size: 25px;
+  color: white;
+  margin: 30px;
+}
+#movies {
+  margin: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: space-between;
+}
+
+.movie {
+  width: 185px;
+  position: relative;
+}
+#spinner {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 30%;
+  left: 50%;
+  display: none;
+  width: 50px;
+  padding: 8px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #25b09b;
+  --_m: conic-gradient(#0000 10%, #000), linear-gradient(#000 0 0) content-box;
+  -webkit-mask: var(--_m);
+  mask: var(--_m);
+  -webkit-mask-composite: source-out;
+  mask-composite: subtract;
+  animation: s3 1s infinite linear;
+}
+@keyframes s3 {
+  to {
+    transform: rotate(1turn);
+  }
+}
+#vote {
+  color: white;
+  position: absolute;
+  top: 240px;
+  left: 135px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  /* background: linear-gradient(
+    90deg,
+    rgb(244, 242, 242) 0%,
+    rgb(120, 4, 133) 100% */
+  /* ); */
+  background: radial-gradient(
+      93% 87% at 87% 89%,
+      rgb(69, 6, 111) 0%,
+      transparent 86.18%
+    ),
+    radial-gradient(
+      66% 66% at 26% 20%,
+      rgba(255, 255, 255, 0.55) 0%,
+      rgb(69, 6, 111) 69.79%,
+      rgb(69, 6, 111) 100%
+    );
+  border-radius: 50%;
+  border: solid rgb(4, 132, 11) 5px;
+}
+.movieInfo {
+  color: white;
+}
