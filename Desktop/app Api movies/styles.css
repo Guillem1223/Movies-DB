@@ -3,13 +3,14 @@
   width: cover;
   background: #45066f;
   display: flex;
-  justify-content: flex-start;
+  flex-direction: row;
+
   align-items: center;
-  gap: 50px;
 }
 #select-lang {
   background-color: #48afef;
-  margin-left: 830px;
+  margin-left: auto;
+  margin-right: 15px;
 }
 body {
   margin: 0;
@@ -20,6 +21,9 @@ body {
   font-size: 25px;
   color: white;
   margin: 30px;
+}
+.titulosHeader:hover {
+  color: black;
 }
 #movies {
   margin: 80px;
@@ -87,5 +91,11 @@ body {
   border: solid rgb(4, 132, 11) 5px;
 }
 .movieInfo {
+  color: white;
+}
+#tituloPeli {
+  color: white;
+}
+#sinopsis {
   color: white;
 }
